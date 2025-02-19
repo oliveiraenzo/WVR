@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WVR - Web Visibility Risk</title>
+</head>
+<body>
+    <h1>Bem-vindo ao WVR</h1>
+    <form id="scanForm">
+        <label for="search_query">O que você deseja escanear?</label>
+        <input type="text" id="search_query" name="search_query" placeholder="Digite domínio, IP, etc." required>
+        <button type="submit">Fazer SCAN</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <div id="results"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
