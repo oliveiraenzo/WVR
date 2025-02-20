@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - WVR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='img/ConversysITSolutions_Branco (1).png') }}" alt="Logo Conversys IT Solutions" class="logo-img">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('scan_page') }}">Iniciar Scan</a></li>
+            <li><a href="{{ url_for('about') }}">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-section">
+        <h1>Sobre Nós</h1>
+
+        <p>Bem-vindo à nossa página! Somos a <strong>WVR - Web Visibility Risk</strong>, uma empresa focada em fornecer soluções para melhorar a segurança online através de análises e monitoramento da visibilidade digital de empresas.</p>
+
+        <h2>Nossa História</h2>
+        <p>A WVR foi fundada com o objetivo de ajudar empresas a protegerem suas informações e a reduzirem riscos na web. Com uma equipe altamente especializada em cibersegurança, oferecemos soluções de monitoramento contínuo e mapeamento de superfícies de ataque para prevenir vulnerabilidades.</p>
+
+        <h2>Missão</h2>
+        <p>Proteger nossos clientes de ameaças digitais, oferecendo soluções inovadoras para uma web mais segura.</p>
+
+        <h2>Visão</h2>
+        <p>Ser reconhecida como líder em soluções de monitoramento de risco online, ajudando empresas ao redor do mundo a protegerem seus dados e suas operações na web.</p>
+
+        <h2>Valores</h2>
+        <ul>
+            <li>Inovação</li>
+            <li>Compromisso com a segurança</li>
+            <li>Excelência no atendimento</li>
+            <li>Transparência e ética</li>
+        </ul>
+
+        <h2>Entre em Contato</h2>
+        <p>Se tiver alguma dúvida ou precisar de mais informações, não hesite em nos contatar!</p>
+        <a href="{{ url_for('contact_page') }}" class="btn">Fale Conosco</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 WVR - Web Visibility Risk. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
